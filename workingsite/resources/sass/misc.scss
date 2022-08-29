@@ -1,0 +1,458 @@
+
+/* Misc pages */
+
+#account-registration{
+  form{
+    width:100%;
+
+    input,
+    select{
+      width:100%;
+
+      &.half{
+        width:50%;
+      }
+    }
+
+    input[type=submit]{
+      width: 50%;
+    }
+
+    input[type=radio]{
+      width: 40px;
+    }
+  }
+}
+
+.contact-cust {
+  color: #ffffdf;
+}
+
+#our-story,
+#customer-service{
+  //height: 100%;
+
+  .custom-head{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: inherit;
+    position: relative;
+
+    img{
+      width:100%;
+      height: auto;
+    }
+
+    .headContentContainer{
+      width: 800px;
+      position: absolute;
+      left:50%;
+      margin-left: -400px;
+      top: 4.4vw;
+      //padding:0 100px;
+      text-align: center;
+
+      h1{
+        color:#FFF;
+        font-size: 1.85rem;
+      }
+      h4, h5{
+        color: #fff;
+      }
+      p{
+        color:#FFF;
+        top:0;
+        margin: 20px 0 30px;
+        //text-align: center;
+      }
+      a{
+        color: #FFF;
+        &.hover,
+          &:hover,
+          &.focus,
+          &:focus,
+          &.active,
+          &:active{
+          text-decoration: underline;
+          color: #FFF
+        }
+      }
+      a.btn.btn-primary{
+        //margin: 0 auto;
+        color:#FFF;
+        display: inline-block;
+        border-color: #FFF;
+
+          &.hover,
+          &:hover,
+          &.focus,
+          &:focus,
+          &.active,
+          &:active{
+          outline: none;
+          box-shadow: none !important;
+          background-color: #FFF !important;
+
+          text-decoration: none;
+          border-color: #FFF;
+          background: none;
+          color:$nav1;
+        }
+      }
+    }
+
+  }
+
+  .custom-body{
+    padding-top:30px;
+
+    h3,
+    p{
+      text-align: center;
+    }
+
+    h3{
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      margin-top: 2.5rem;
+      &.title3{
+        margin-top: 1.5rem 0 2rem;
+      }
+    }
+
+    div{
+      margin: 20px 0 0;
+
+      &.firstdiv{
+        margin-top:30px;
+      }
+
+      h3,
+      p{
+        text-align: left;
+      }
+    }
+  }
+
+}
+
+#padbottom-content {
+  margin-bottom: 100px;
+}
+
+#our-story{
+  height: auto;
+
+  h3{
+    text-align: center;
+    margin: 30px 0 25px;
+  }
+
+  .container{
+
+
+    .row{
+      margin-bottom: 30px;
+
+      p{
+        &.synopsis{
+          font-size: 1.1rem;
+          span{
+            font-family: 'Futura Std Medium';
+          }
+        }
+      }
+      .text-bloc{
+        display: flex;
+        flex-direction: column;
+        //align-items: center;
+        justify-content: center;
+
+        h3{
+          text-align: left;
+          font-size: 1.3rem;
+          margin: 0;
+          &.title-2{
+            padding: 1.1rem 0;
+          }
+        }
+
+      }
+    }
+  }
+
+  .projects{
+    background-color: $tan1;
+
+    h2{
+      font-family: 'Futura Std Heavy';
+      font-size: 1.575rem;
+      text-align: center;
+      padding: 50px 0 30px;
+    }
+
+    ul{
+      margin-bottom: 0;
+    }
+  }
+}
+
+#catalog-list {
+  h1{
+    margin-top: 33px;
+    margin-bottom: 30px;
+    color: #7A7D81;
+    font-size: 1.85rem;
+    font-family: 'Futura Std Heavy';
+  }
+}
+
+
+.container.wufoo{
+  margin-top: 30px;
+}
+
+.wholebody {
+  background-image: url(/images/pres-req-bg.jpg);
+  background-size: cover;
+  -webkit-background-origin: border;
+  padding-bottom: 900px;
+}
+
+.whitenav {
+  background: #fff;
+}
+
+.fixed-bottom {
+    position:relative;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.fixed-bottom.presreq {
+  position:fixed;
+}
+.infinite-bottom {
+  bottom: 0px;
+}
+
+@media screen and (max-width: 992px) and (min-device-width: 320px) {
+  #our-story,
+  #customer-service{
+
+    .custom-head{
+      height:400px;
+      overflow:hidden;
+
+      img{
+        width: auto;
+        height: 100%;
+      }
+
+      .headContentContainer{
+        width: 100%;
+        position: absolute;
+        top: 4vw;
+        left: 0;
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+
+    .custom-body{
+      padding-top: 0;
+
+      h3{
+        margin-top: 2rem;
+      }
+    }
+  }
+  footer {
+    .fixed-bottom{
+      position: relative;
+      background-color: white;
+      z-index:1000;
+    }
+  }
+}
+
+.cat-clear {
+  clear: both;
+  height: 200px;
+}
+
+.homehide {
+  display:none;
+}
+
+.coll-desc {
+  font-size: x-large;
+  margin: 20px;
+}
+
+
+.coll-desc1 {
+    font-size: 1.2rem;
+}
+
+.bluelink {
+  color: #007bff;
+}
+
+.orangelink {
+  color: #FA4616;
+}
+
+@media (min-width:320px)  {
+  .mobile-vertfix {
+    min-height: 0;
+    margin-top: -2px;
+  }
+ }
+
+//  material calculation page css
+
+#materialcalc-container {
+  background-color:#e7e5dc;
+}
+
+.diagram > img {
+  display: block;
+  margin: auto;
+}
+
+#materialcalc-container form {
+  width: 90%;
+  margin: 0 auto;
+  background-color:#e7e5dc;
+}
+
+form label {
+  margin: 0 auto;
+  width: 400px;
+  display: block
+}
+
+#materialcalc-container form input {
+  width: 400px;
+  margin: 0 auto 16px;
+  display: block;
+  padding: 4px 12px;
+  background-color: #e7e5dc;
+  border: 1px solid #7a7d81
+}
+
+#materialcalc-container form p {
+  width: 100%;
+  text-align: center
+}
+
+.result.hide {
+  display: none
+}
+
+#materialcalc-container .result .head {
+  width: 400px;
+  margin: 0 auto
+}
+
+.result .head .output,
+.result .head .title {
+  width: 50%;
+  display: inline-block
+}
+
+#materialcalc-container .result .head .output p,
+#materialcalc-container .result .head .title p {
+  text-align: right
+}
+.result .foot {
+  text-align: center;
+}
+
+@media screen and (max-width:992px) and (min-device-width:320px) {
+
+  p.diagram img {
+      width: 80%
+  }
+
+  #materialcalc-container,
+  #materialcalc-container .result .head,
+  #materialcalc-container form,
+  #materialcalc-container form input,
+  #materialcalc-container form label {
+      width: 100%
+  }
+}
+
+.purchase_btn {
+  background-color: #e7e5dc;
+  border:none;
+}
+.purchase_btn:focus {
+  box-shadow: 1px 1px 4px #e7e5dc;
+}
+
+.register_link:hover {
+  color: #FA4616
+}
+.orangelink {
+  color: #FA4616
+}
+.orangelink:hover {
+  color: #FA4616
+}
+
+.ugp-container {
+  overflow-y: auto;
+}
+form.ugp-form label{
+  margin: 0 0;
+  font-weight: bold;
+  width: auto;
+}
+
+.dropzone {
+  border: 0.2rem dashed #6583fe;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: 0.25s background-color ease-in-out;
+  cursor: pointer;
+  
+  &-dragging,
+  &:hover {
+    background-color: lighten(#6583fe, 28%);
+  }
+  
+  &-icon {
+    max-width: 75px;
+    display: block;
+    margin: 0 auto 1.5rem;
+  }
+  
+  &-input {
+    display: none;
+  }
+}
+
+#user-image-input {
+  width: 100%;
+}
+
+.card.cust-serv {
+  margin: 30px 0;
+}
+// put on <body> to make content scroll under footer
+.scrollbottom {
+  min-height: 1000px;
+  margin-bottom: 500px;
+  clear: both;
+}
+
+.grecaptcha-badge {
+  z-index: 2000;
+}

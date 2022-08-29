@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /cart/
+Disallow: /cart/*
+Disallow: /dashboard/
+Disallow: /dashboard/*
+Allow: /item/*/$
+Disallow: /item/*/*
+Disallow: /login/
+Disallow: /login#!
+Disallow: /register/
+Disallow: /register#1
+Disallow: /password/*

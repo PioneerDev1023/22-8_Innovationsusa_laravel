@@ -1,0 +1,158 @@
+#customlabs{
+  .custom-head{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: inherit;
+    position: relative;
+
+    img{
+      width:100%;
+      height: auto;
+    }
+  
+    .headContentContainer{
+      width: 650px;
+      position: absolute; 
+      left:50%;
+      margin-left: -325px;
+      top: 7vw;
+      //padding:0 100px;
+      text-align: center;
+
+      h1{
+        color:#FFF;
+        font-size: 1.85rem;
+        &.grey{
+          color:$nav1;
+        }
+
+        &.bg{
+          background: rgba(51, 51, 51, 0.5);
+        }
+      }
+      p{
+        color:#FFF;
+        top:0;
+        margin: 20px 0 30px;
+        //text-align: center;
+        &.grey{
+          color: $nav1;
+        }
+        &.bg{
+          //background-color:$nav1;
+          background: rgba(51, 51, 51, 0.5);
+        }
+
+      }
+      a.btn.btn-primary{
+        //margin: 0 auto;
+        color:#FFF;
+        display: inline-block;
+        border-color: #FFF;
+
+        &.grey{
+          color: $nav1; border-color: $nav1;
+        }
+        &.bg{
+          border-color: #FFF;
+          background: $nav1; 
+          color: #FFF;
+        }
+
+          &.hover,
+          &:hover,
+          &.focus,
+          &:focus,
+          &.active,
+          &:active{
+          outline: none;
+          box-shadow: none !important;
+          background-color: #FFF !important;
+          
+          border-color: #FFF;
+          background: none; 
+          color:$nav1;
+
+          &.grey{
+            &:hover{
+              color: #FFF;
+              background: $nav1 !important;
+              background-color: $nav1 !important;
+            }
+          }
+  }
+      }
+    }
+  }
+
+  .custom-body{
+    margin:30px 0 0;
+
+    h3{
+      font-family: 'Futura Std Heavy'; font-size: 18px;
+      margin: 0;
+
+    }
+
+    .how-it-works{
+      img{
+        width: 40%; margin-right: 20px;
+
+        @media screen and (max-width: 992px) and (min-device-width: 320px) {
+          width: 100%;
+          margin: 0 0 20px;
+        }
+      }
+    }
+
+  }
+
+  .projects{
+    h2{
+      text-align: center;
+      font-family: 'Futura Std Heavy'; font-size: 22px;
+      padding: 14px 0 26px;
+    }
+
+    .row{
+      padding-left: 0;
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px) and (min-device-width: 320px) {
+  #customlabs{
+    .custom-head{
+      height:400px;
+      overflow:hidden;
+
+      img{
+        width: auto;
+        height: 100%;
+        margin-left: -40%;
+      }
+
+      .headContentContainer{
+        top: 12vw;
+        padding: 0 20px;
+
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
+
+  #modal-customlabs-container.modal{
+    .modal-dialog{
+      padding: 40px 20px;
+    }
+  }
+}
+
+
+
+

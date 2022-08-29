@@ -1,0 +1,13 @@
+#productcontainer #product-filter { padding: 0; }
+
+#productcontainer #product-thumbs { padding-left: 0; }
+
+#productcontainer #product-thumbs li .inner { padding: 5px; }
+
+#productcontainer #product-thumbs li .inner img { width: 100%; height: auto; }
+
+#productcontainer #product-thumbs li .inner p { display: inline-block; width: auto; padding-top: 6px; }
+
+#productcontainer #product-thumbs li .inner button { float: right; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHJvZHVjdC5jc3MiLCJzb3VyY2VzIjpbInByb2R1Y3Quc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxBQUVFLGlCQUZlLENBRWYsZUFBZSxDQUFBLEVBQ2IsT0FBTyxFQUFFLENBQUMsR0FDWDs7QUFKSCxBQU1FLGlCQU5lLENBTWYsZUFBZSxDQUFBLEVBQ2IsWUFBWSxFQUFFLENBQUMsR0FxQmhCOztBQTVCSCxBQVVNLGlCQVZXLENBTWYsZUFBZSxDQUdiLEVBQUUsQ0FDQSxNQUFNLENBQUMsRUFDTCxPQUFPLEVBQUUsR0FBRyxHQWNiOztBQXpCUCxBQWFRLGlCQWJTLENBTWYsZUFBZSxDQUdiLEVBQUUsQ0FDQSxNQUFNLENBR0osR0FBRyxDQUFBLEVBQ0QsS0FBSyxFQUFFLElBQUksRUFBRSxNQUFNLEVBQUMsSUFBSSxHQUN6Qjs7QUFmVCxBQWlCUSxpQkFqQlMsQ0FNZixlQUFlLENBR2IsRUFBRSxDQUNBLE1BQU0sQ0FPSixDQUFDLENBQUEsRUFDQyxPQUFPLEVBQUMsWUFBWSxFQUFFLEtBQUssRUFBRSxJQUFJLEVBQUUsV0FBVyxFQUFDLEdBQUcsR0FDbkQ7O0FBbkJULEFBcUJRLGlCQXJCUyxDQU1mLGVBQWUsQ0FHYixFQUFFLENBQ0EsTUFBTSxDQVdKLE1BQU0sQ0FBQSxFQUNKLEtBQUssRUFBQyxLQUFLLEdBQ1oifQ== */

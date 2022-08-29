@@ -1,0 +1,379 @@
+
+    /* $grid-breakpoints: (
+      xs: 0,
+      sm: 576px,
+      md: 768px,
+      lg: 992px,
+      xl: 1200px,
+      xxl: 1900px
+    );
+
+    $container-max-widths: (
+     sm: 540px,
+      md: 720px,
+      lg: 960px,
+      xl: 1140px,
+      xxl: 1610px
+    ); */
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        z-index: 10;
+    }
+    to {
+        opacity: 1;
+        z-index: 10;
+        visibility: visible;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        z-index: 10;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
+}
+
+html, 
+body{
+  background-color: #FFF;
+  height: 100%;
+  //overflow-x: hidden; // !!! breaks lazy load
+}
+body{ 
+  // https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
+  display:flex; 
+  flex-direction:column; 
+  color: initial;
+}
+
+li{
+  list-style: none;
+}
+
+
+.custom-control-input:active ~ .custom-control-label::before,
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow:none !important;
+}
+input.custom-control-input[type=checkbox]:checked + label:after{
+  background-color: $nav1;
+}
+a{
+  color: $nav1;
+
+  &.hover{
+    color: $nav1;
+  }
+
+  &:active,
+  &:focus{
+    outline: none;
+    color: $nav1;
+  }
+}
+
+div,
+li,
+h1,
+h2,
+p,
+a{
+  font-family: 'Futura Std Light';
+  letter-spacing: .05rem;
+  color: $nav1;
+}
+
+h1,
+h3{
+  font-family: 'Futura Std Heavy';
+}
+/* button.btn.btn-primary{
+  background-color: transparent;
+  border-color: transparent;
+  background: none; 
+  border-radius: 0;
+  color:$nav1;
+  
+  &.focus,
+  &:focus,
+  &.active,
+  &:active{
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
+    background: none; 
+    color:$nav1;
+  }
+} */
+a.btn.btn-primary,
+input.btn.btn-primary,
+button.btn.btn-primary{
+  // width:100%;
+  //clear:both;
+  background-color: transparent;
+  border-color: transparent;
+  background: none; 
+  border-radius: 0;
+  color:$nav1;
+  font-size: 0.85rem;
+
+  border:1px $nav1 solid;
+  padding: 0.4rem 1.85rem;
+  letter-spacing: .08rem;
+  font-family: 'Futura Std Book';
+
+  &.hover,
+  &:hover,
+  &.focus,
+  &:focus,
+  &.active,
+  &:active{
+    outline: none;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    
+    border-color: $nav1;
+    background: none; 
+    color:$nav1;
+  }
+}
+
+
+
+.modal { padding-right: 0 !important }
+.modal-dialog{
+  max-width: 54vw;
+  //padding: 0 80px; 
+  padding: 30px 80px 20px; 
+  //padding:4rem 4.5rem 2.75rem; 
+  background-color: #FFF;
+  //margin: auto;
+
+  .modal-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      pointer-events: auto;
+      background-color: #fff;
+      background-clip: initial;
+      border: none;
+      border-radius: 0;
+      outline: 0;
+
+
+      .modal-body{
+        padding:0;
+
+        .close{
+          display: inline-block;
+          width: 20px;
+          position: absolute;
+          top: 10px;
+          right: -50px;
+          border: none;
+          outline:none;
+          opacity: 0.8;
+        }
+
+        .carousel-wrap{
+          .owl-stage-outer{
+            padding-right: 0;
+          }
+
+          .owl-nav{
+            width: 100%;
+            position: absolute;
+            top:50%;
+            margin-top: -15px;
+
+            button{
+              padding: 0;
+              border: none;
+              background: none;
+              img{
+                  width:18px; height:30px;
+                  opacity: 0.8;
+                }
+                &.focus,
+                &:focus,
+                &.active,
+                &:active{
+                  outline: none;
+                  box-shadow: none;
+                  background-color: transparent;
+                  border-color: transparent;
+                  background: none; 
+                }
+
+              &.owl-prev{
+                float: left; 
+                margin-left: -45px;
+
+              }
+              &.owl-next{
+                float: right;
+                margin-right: -45px;
+                img{
+                  width:18px; height:30px;
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+        }
+
+      }
+
+      .modal-title{
+        
+      }
+  }
+
+  .owl-stage-outer{
+
+  }
+}
+
+ol.breadcrumb{
+  margin-bottom: 0;
+  background-color: #F3F2EE;
+  padding: 0.75rem 0.5rem 0.75rem 28px;
+
+  @media screen and (max-width: 992px) and (min-device-width: 320px) {
+    padding-left: 20px;
+  }
+
+  .breadcrumb-item{
+    color: $nav1;
+    font-size: 13px;
+    padding-left: 0.25rem;
+
+    &.active{
+      font-weight: bold;
+    }
+    
+    a{
+      &:active,
+      &:hover{
+        color: $nav1;
+      }
+    }
+  }
+
+  .breadcrumb-item +
+  .breadcrumb-item::before {
+      display: block;
+      padding-right: 0.25rem;
+      color: $nav1;
+      content: '';
+      background: url("../images/icons/arrow4.svg") no-repeat;
+      background-size: 10px 10px;
+      margin: 5px;
+
+  }
+
+}
+
+
+.zsiq_floatmain.zsiq_theme8.siq_bR{
+  bottom: 74px;
+}
+
+@media screen and (max-width: 992px) and (min-device-width: 320px) {
+
+  #modal-customlabs-container.modal,
+  #modal-pdp-login-container.modal,
+  #modal-pdp-yardage-container.modal,
+  #modal-pdp-gallery-container.modal,
+  #modal-product-container.modal{
+    .modal-dialog{
+      max-width: initial;
+      padding: 40px 20px;
+
+      .modal-content{
+
+        .modal-body{
+
+          .close{
+              top: -34px;
+              right: -14px;
+          }
+        }
+      }
+    }
+  }
+
+  .zsiq_floatmain.zsiq_theme8.siq_bR{
+    bottom: 24px;
+  }
+}
+
+
+
+.nav-item.login.shop,
+#pdp-login-btn {
+  /*position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;*/
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: $nav1;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px; 
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltiptext1 {
+  visibility: hidden;  
+  background-color: $nav1;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px; 
+  position: absolute;
+  z-index: 1;  
+}
+
+.tooltiptext2 {
+  width: 450px;  
+  visibility: hidden;  
+  border-radius: 6px; 
+  position: absolute;
+  z-index: 1;  
+}
+.register_quiz:hover .tooltiptext2 {
+  visibility: visible;
+}
+
+.nav-item.login.shop .nav-link:hover .tooltiptext{
+  visibility: visible;
+}
+
+#pdp-login-btn button:hover .tooltiptext {
+  visibility: visible;
+}
+
+.cutfee_text:hover .tooltiptext1{
+  visibility: visible;
+}
+
+.cutfee_title:hover .tooltiptext1{
+  visibility: visible;
+}

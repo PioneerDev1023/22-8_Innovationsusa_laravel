@@ -1,0 +1,47 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+@import "node_modules/bootstrap/scss/bootstrap";
+
+//$fa-font-path: "~font-awesome/fonts";
+
+// !!! issues: npm run dev, needed for gulp watch
+$fa-font-path: "/fonts/vendor/font-awesome";
+@import "node_modules/font-awesome/scss/font-awesome";
+
+@import '~owl.carousel/dist/assets/owl.carousel.css';
+
+@import 'fonts';
+// global
+@import 'main';
+@import 'main_nav';
+@import 'main_nav_mobile';
+@import 'main_footer';
+
+// landing
+@import 'welcome';
+// login
+@import 'home';
+// PLP
+@import 'product';
+// PDP
+@import 'item';
+// cart
+@import 'cart';
+// custom labs
+@import 'customlabs';
+// showrooms / find a rep pages
+@import 'showrooms_rep';
+// terms, privacy
+@import 'legal';
+// misc pages
+@import 'misc';
+// modals
+@import 'modals';
+// menus
+@import 'menus';

@@ -1,0 +1,138 @@
+
+#home.container-fluid{
+  margin-top: 5rem;
+  background-color: #e7e5dc;
+  
+  .order-row-titles,
+  .order-row{
+    ul{
+      width:100%;
+      display: flex;      
+      li{
+        flex: 1; margin:0; text-align: left;
+
+      }
+    }
+  }
+
+}
+.order-header {
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 3rem;  
+
+  p{
+    text-align: center;
+
+    a{
+      display: inline-block;
+      position: relative;
+      padding: 0.6rem 0.5rem;
+      cursor: pointer;
+
+      &:hover{
+        text-underline-position: under;
+        color:$nav1;
+      }
+      &.active{
+        border-bottom: 2px solid#FA4616;        
+      }
+
+      span.underline{
+        position: absolute;
+        bottom:10px; left:5%;
+        display: inline-block;
+        border-bottom: 1px $red1 solid;
+        width:90%;
+      }
+    }
+  }
+}
+
+.bucket-container {  
+  padding: 2rem;
+  border-radius: 0.75rem;  
+  margin-left: 2rem;
+  margin-left: 2rem;
+}
+.homeTile-container > div {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  position: relative;
+  text-align: center;
+}
+.homeTile-container > div > a > img { 
+  filter: brightness(0.9);
+}
+.homeTile-container > div > a > h5 {
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.myaccount-box:hover .tooltiptext{
+  visibility: visible;
+}
+
+.order-table {
+  border-collapse: collapse;  
+  color: #7A7D81;
+}
+.order-table > thead > th {   
+  font-weight: bold;
+}
+
+.order-table.table td, .table th {
+  border-top: none;
+}
+
+.order-table.table thead th {
+  border-bottom: 2px solid #7A7D81;
+}
+
+a.payBtn.active {
+  color: #FA4616 
+}
+
+a.payBtn.active:hover {
+  color: #FA4616 
+}
+div.order-history-header {
+  box-shadow: 8px 8px 16px grey;
+}
+.focus-nooutline {
+  border: none;
+  box-shadow: none;
+}
+.focus-nooutline:focus, :hover, :active {
+  border: none;
+  box-shadow: none;
+}
+.orange-color {
+  color: #FA4616 
+}
+
+.orange-color:hover, :focus {
+  color: #FA4616 
+}
+
+#upload_div {
+  border: 1px solid #ccd0d9;
+  cursor: pointer;
+}
+
+#upload_div:focus {
+  border-color: #2685c6;
+}
+
+
+#certificate {
+  display: none;
+}
+
+.file-size {
+  font-size: 1.2rem;
+}

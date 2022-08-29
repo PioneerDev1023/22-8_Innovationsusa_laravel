@@ -1,0 +1,20 @@
+/* Styles for menus */
+
+ul #LoginUserDropdown {
+  background-color: white;
+}
+
+.dropdown:hover #LoginUserDropdown{
+    display: block;
+}
+.dropdown-menu{
+    margin-top: 0;
+}
+
+ul#LoginUserDropdown > li:hover a.nav-link{
+  color:#3490dc;
+}
+
+ul #LoginUserDropdown > li:active {
+  background-color: white;
+}

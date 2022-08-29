@@ -1,0 +1,15 @@
+<?php
+// config array
+return [
+    'value' => [
+        'VER' => 0.59,
+        'PDFapiKey' => '296b41434754722c783d392720',
+        'PDFendPoint' => 'https://distribution.pdfsystems.com/api/', // live
+        'desktop' => true,
+        'email_1' => 'amayer@innovationsusa.com', // samples@innovationsusa.com, amayer@innovationsusa.com for sample request
+        'baseUrl' => 'https://dev1.innovationsusa.com', // https://www.innovationsusa.com for sample request, pinterest
+        'imgUrl' => 'https://dev1.innovationsusa.com', // for sample request
+        'google1' => '',
+        'google2' => ''
+    ]
+];

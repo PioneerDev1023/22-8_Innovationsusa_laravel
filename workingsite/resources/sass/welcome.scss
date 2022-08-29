@@ -1,0 +1,168 @@
+
+#welcomecontainer {
+    height: 100%;
+
+    .homehide {
+        display: none;
+    }
+
+    .slider-nav-welcome {
+        .owl-carousel {
+            z-index: 0;
+            height: 100%;
+            background-color: #F1F1F1;
+
+            .owl-stage-outer {
+                height: 100%;
+
+                .owl-item {
+                    overflow: hidden;
+                    height: 80vh;
+
+                    .item {
+                        height: 100%;
+                        position: relative;
+
+                        img {
+                            //height: 100%; width: auto;
+                            height: auto;
+                            width: 100%;
+                        }
+
+                        .copy {
+                            position: absolute;
+                            color: #FFF;
+
+                            h3 {
+
+                                &.grey {
+                                    color: $nav1;
+                                }
+
+                                &.contrast {
+                                    text-shadow: 3px 3px 3px #333;
+                                }
+                            }
+
+                            p {
+                                color: #FFF;
+
+                                &.grey {
+                                    color: $nav1;
+                                }
+                            }
+
+                            a.btn.btn-primary {
+                                color: #FFF;
+                                border-color: #FFF;
+
+                                /*&.grey{
+                                  color: $nav1; border-color: $nav1;
+                                }*/
+                                &.solid {
+                                    color: $nav1;
+                                    background: #FFF !important;
+                                    background-color: #FFF !important;
+                                }
+
+                                &:hover {
+                                    color: $nav1;
+                                    background: #FFF !important;
+                                    background-color: #FFF !important;
+                                }
+
+                                /*&.grey{
+                                  &:hover{
+                                    color: #FFF;
+                                    background: $nav1 !important;
+                                    background-color: $nav1 !important;
+                                  }
+                                }*/
+                                &.solid {
+                                    &:hover {
+                                        color: $nav1;
+                                        background: #dadada !important;
+                                        background-color: #dadada !important;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .owl-nav {
+                display: none; //position: absolute;
+            }
+
+            .owl-dots {
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                bottom: 20px; // top: 74vh;
+
+                .owl-dot {
+                    margin: 0 4px;
+                    padding: 20px 0;
+
+                    span {
+                        width: 7vw;
+                        height: 2px;
+                        margin-bottom: 6px;
+                        background-color: #FFF;
+                        display: inline-block;
+                    }
+
+                    &.active {
+                        span {
+                            background-color: $red1;
+                        }
+                    }
+                }
+            }
+
+
+            @media screen and (max-width: 992px) and (min-device-width: 320px) {
+
+                .owl-stage-outer {
+                    .owl-item {
+                        .item {
+                            img {
+                                height: 100%;
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+
+                .owl-dots {
+                    bottom: 40px;
+
+                    .owl-dot {
+                        margin: 0 4px;
+                        padding: 20px 0;
+
+                        span {
+                            width: 12vw;
+                            height: 2px;
+                            margin-bottom: 4px;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+.eLIB--row__singleOption {
+    @media (min-width: 1200px) {
+        padding-bottom: 35% !important;
+    }
+    @media (min-width: 1600px) {
+        padding-bottom: calc(35% + -110px) !important;
+    }
+}

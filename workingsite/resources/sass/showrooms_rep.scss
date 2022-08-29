@@ -1,0 +1,150 @@
+
+
+#showrooms-container{
+  padding: 0;
+  margin-top:30px;
+
+  .nav{
+
+    h1{
+      width: 100%;
+      font-family: 'Futura Std Heavy';
+      font-size: 1.75rem;
+    }
+
+    ul{
+      margin: 28px auto 40px;
+      text-align:center;
+
+      li{
+        display: inline; margin: 0 10px;
+        a{
+          text-underline-position: under;
+
+          &:active,
+          &:hover{
+            color: $nav1;
+          }
+        }
+      }
+    }
+  }
+
+  h2{
+    font-family: 'Futura Std Heavy';
+    font-size: 1.5rem;
+    line-height: 2;
+    display: block;
+    width: 100%;
+    border-top: 1px solid $nav1;
+    border-bottom: 1px solid $nav1;
+    margin-bottom:14px;
+    padding:0 30px;
+  }
+  .row{
+    margin: 0;
+    padding-left: 30px; 
+
+    ul{
+      padding: 14px 14px 0 0;
+
+      h4{
+        font-family: 'Futura Std Heavy';
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+#find-a-rep-container{
+  //height: 100%;
+  &.empty{
+    min-height: 600px;
+  }
+
+  .custom-head{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: inherit;
+    position: relative;
+
+    img{
+      width:100%;
+      height: auto;
+    }
+    
+    .headContentContainer{
+      position: absolute; 
+      top: 12vw;
+      padding:0 80px;
+      text-align: center;
+      width: 100%;
+
+      h1{
+        color:#FFF;
+        font-size: 1.85rem;
+      }
+      p{
+        color:#FFF;
+        top:0;
+        //text-align: center;
+      }
+      button{
+        //margin: 0 auto;
+        color:#FFF;
+        display: inline-block;
+        border-color: #FFF;
+      }
+    }
+  }
+
+  .custom-body{
+    h2{
+      text-align: center;
+    }
+
+  }
+
+  .form-container{
+    margin-top: 30px; 
+
+    form{
+      width:100%;
+      
+      select,
+      input{
+        width: 100%;
+        margin: 4px 0;
+        font-family: 'Futura Std Light';
+      }
+    }
+  }
+
+  .rep.container{
+    ul{
+      h4{
+        font-weight: bold; margin-bottom: 0;
+      }
+      .company{
+        font-size: 1.1rem;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px) and (min-device-width: 320px) {
+#find-a-rep-container{
+  .custom-head{
+    height:250px;
+    overflow:hidden;
+
+    img{
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
